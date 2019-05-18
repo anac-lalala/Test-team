@@ -3,12 +3,18 @@
 // imprímelo en consola:
 var primerArreglo = [1, 10, 15, "Hola", [1, 2]];
 
+console.log(primerArreglo.length)
+
 
 // 2. Encuentra el elemento situado en la segunda posición del arreglo (primerArreglo).
 // imprímelo en consola.
 
+console.log(primerArreglo[1])
 
 // 3. Elimina la última posición del arreglo (primerArreglo) y asígnalo a una variable llamada (subArray).
+var subArray = primerArreglo.pop()
+
+console.log(subArray)
 
 
 // 4. Agrega el valor de (subArray) a la primera posición del arreglo
@@ -16,10 +22,16 @@ var primerArreglo = [1, 10, 15, "Hola", [1, 2]];
 // que está en la primera posición actual.
 // imprime en consola el arreglo resultante (primerArreglo).
 
+primerArreglo.unshift(subArray);
+
+console.log(primerArreglo)
 
 // 5. Por último, elimina el valor 15 del arreglo
 // imprime el arreglo final en consola.
+delete primerArreglo [3]
 
+console.log(primerArreglo)
+console.log(primerArreglo[3])
 
 // ***** Para correr este archivo en la consola de node ejecuta el siguiente comando:
 // ***** node ./ejercicios/data-types/arreglos.js
